@@ -1,9 +1,14 @@
 export interface Movie {
   id: number;
   title: string;
-  posterUrl: string;
-  description?: string;
   year?: number;
   rating?: number;
-  category: string; // 🔹 cheklov olib tashlandi
+  language?: string;
+  duration?: string;
+  ageLimit?: string;
+  description?: string;
+  posterUrl: string;
+  trailerUrl?: string; // 🔹 ixtiyoriy qilib qo‘shildi
+  category: "tarjima" | "serial" | "multfilm";
+  episodes?: { id: number; title: string }[];
 }
