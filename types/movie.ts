@@ -9,4 +9,5 @@ export interface Movie {
   description: string;
   posterUrl: string;
   trailerUrl?: string;
+  category: "tarjima" | "serial" | "multfilm"; // 🔹 Bu qatorni qo‘shing
 }
